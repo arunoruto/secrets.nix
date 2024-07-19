@@ -2,6 +2,7 @@ keys:
   - &users:
     - &mirza age1sv7v502vtcfqy3qpgp8jvk92rcajwgsqzngldt4233h4966jmvnq2lre7f
     - &mar age13v3rsufntuytj602vserdgxpggqs6zpklp78gc58kdznxaza83fsederp0
+    - &mar-ultron age13k0fcuy48gagkclfmu5d27rt7jr3q7vk5lrttvjjmaftg0cx6evqehxqet
   - &hosts:
     - &zangetsu age1st5c42z0nrx4gvh3r52e73e9vyx8ultu0zwrf38ltnsvj24l03nsglfh74
     - &kyuubi age135vshf3jd0elrxfdl5zzjd4hsnk8n3q8uxe2updd5c7w8xzgvvns4et26u
@@ -11,5 +12,6 @@ creation_rules:
       - age:
           - *mirza
           - *mar
+          - *mar-ultron
           - *zangetsu
           - *kyuubi
