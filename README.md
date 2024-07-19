@@ -27,3 +27,20 @@ home-manager switch --refresh --flake .#mirza
 ```sh
 systemctl --user reset-failed
 ```
+
+## Keys
+
+Add these keys to `.sops.yaml`.
+
+### Standalone
+
+```sh
+mkdir -p ~/.config/sops/age
+age-keygen -o ~/.config/sops/age/keys.txt
+```
+
+### From host key
+
+```sh
+cat /etc/ssh/ssh_host_ed25519_key.pub | ssh-to-age
+```
