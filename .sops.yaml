@@ -6,6 +6,7 @@ keys:
   - &hosts:
     - &zangetsu age1st5c42z0nrx4gvh3r52e73e9vyx8ultu0zwrf38ltnsvj24l03nsglfh74
     - &kyuubi age135vshf3jd0elrxfdl5zzjd4hsnk8n3q8uxe2updd5c7w8xzgvvns4et26u
+    - &kuchiki age1zgg9evn6xq8hug3angmdewdhm3gqlrrwl7uss3326zfypalmmdwq2pcuht
 creation_rules:
   - path_regex: secrets.yaml$
     key_groups:
@@ -15,3 +16,4 @@ creation_rules:
           - *mar-ultron
           - *zangetsu
           - *kyuubi
+          - *kuchiki
