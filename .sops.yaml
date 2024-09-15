@@ -4,6 +4,7 @@ keys:
     - &mar age13v3rsufntuytj602vserdgxpggqs6zpklp78gc58kdznxaza83fsederp0
     - &mar-ultron age13k0fcuy48gagkclfmu5d27rt7jr3q7vk5lrttvjjmaftg0cx6evqehxqet
   - &hosts:
+    - &isshin age103v0t5udfzraudqvjtnk6ted9qg6t38qjx2knyq99c5hg70894csd0hw84
     - &zangetsu age1st5c42z0nrx4gvh3r52e73e9vyx8ultu0zwrf38ltnsvj24l03nsglfh74
     - &yhwach age1t9f9ud76j9jhtj68g6cse0qtcw79sf3xf0p8u03s897ytk33hpgqga2lp9
     - &kyuubi age135vshf3jd0elrxfdl5zzjd4hsnk8n3q8uxe2updd5c7w8xzgvvns4et26u
@@ -15,6 +16,7 @@ creation_rules:
           - *mirza
           - *mar
           - *mar-ultron
+          - *isshin
           - *zangetsu
           - *yhwach
           - *kyuubi
