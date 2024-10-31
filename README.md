@@ -2,6 +2,9 @@
 
 ## Update sops file
 
+Add the wanted keys to the `secrets.yaml` file
+and then then run the following command to encrypt the data.
+
 ```sh
 sops updatekeys secrets.yaml
 ```
@@ -34,12 +37,19 @@ Add these keys to `.sops.yaml`.
 
 ### Standalone
 
+Create a standalone key for the user to be used.
+Reference it in the `users` section after creating it.
+
 ```sh
 mkdir -p ~/.config/sops/age
 age-keygen -o ~/.config/sops/age/keys.txt
 ```
 
-### From host key
+### Host Key
+
+Create an `age` key from the hosts SSH key found in `/etc/ssh`.
+Please use the ed25519 key or something stronger in the future :)
+Add the key to the `hosts` sections.
 
 ```sh
 cat /etc/ssh/ssh_host_ed25519_key.pub | ssh-to-age
