@@ -57,3 +57,15 @@ cat /etc/ssh/ssh_host_ed25519_key.pub | ssh-to-age
 # Key generated using TPM module
 cat /etc/ssh/ssh_tpm_host_ecdsa_key.pub | ssh-to-age
 ```
+
+# Yubikey
+
+To add a key for a new user,
+use `pamu2fcfg` and put it in `.config/Yubico/u2f_keys` (or in the secrets.yaml file).
+
+For adding new keys to an existing user,
+use the following shell command to combine the string:
+
+```sh
+echo "$(cat .config/Yubico/u2f_keys)$(pamu2fcfg -n)"
+```
