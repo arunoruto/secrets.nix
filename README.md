@@ -78,7 +78,7 @@ To generate a new key, we need to have the yubikey pluged in,
 and use a special key type `ed25519-sk` (sk stands for security key, I guess?):
 
 ```sh
-ssh-keygen -t ed25519-sk -N "" -C "<nice comment>" -f ~/.ssh/id_<name>
+ssh-keygen -t ed25519-sk -N "" -C "<comment>" -f ~/.ssh/id_<name>
 ```
 
 This will generate both the public and private keys on the device.
@@ -87,7 +87,10 @@ so we do not need to store the a file on the PC
 (from [this](https://xeiaso.net/blog/yubikey-ssh-key-storage/) guide):
 
 ```sh
-ssh-keygen -t ed25519-sk -O resident
+# generate the key
+ssh-keygen -t ed25519-sk -O resident -C "<comment>" -f ~/.ssh/id_<name>_sign
+# make ssh aware of it
+ssh-add -K
 ```
 
 (The private key needs-to/can be deleted afterwards)
