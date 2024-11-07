@@ -60,6 +60,8 @@ cat /etc/ssh/ssh_tpm_host_ecdsa_key.pub | ssh-to-age
 
 # Yubikey
 
+## u2f
+
 To add a key for a new user,
 use `pamu2fcfg` and put it in `.config/Yubico/u2f_keys` (or in the secrets.yaml file).
 
@@ -69,3 +71,23 @@ use the following shell command to combine the string:
 ```sh
 echo "$(cat .config/Yubico/u2f_keys)$(pamu2fcfg -n)"
 ```
+
+## SSH
+
+To generate a new key, we need to have the yubikey pluged in,
+and use a special key type `ed25519-sk` (sk stands for security key, I guess?):
+
+```sh
+ssh-keygen -t ed25519-sk -N "" -C "<nice comment>" -f ~/.ssh/id_<name>
+```
+
+This will generate both the public and private keys on the device.
+We can also generate the private key on the device,
+so we do not need to store the a file on the PC
+(from [this](https://xeiaso.net/blog/yubikey-ssh-key-storage/) guide):
+
+```sh
+ssh-keygen -t ed25519-sk -O resident
+```
+
+(The private key needs-to/can be deleted afterwards)
