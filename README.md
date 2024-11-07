@@ -72,6 +72,12 @@ use the following shell command to combine the string:
 echo "$(cat .config/Yubico/u2f_keys)$(pamu2fcfg -n)"
 ```
 
+Some useful flags:
+
+- `-u` sets the user for the file. The default value is `$USER`.
+- `-o` is the value for the origin. By default it is `pam://$HOSTNAME`.
+  If you want to reuse the key across different devices, make it host independent.
+
 ## SSH
 
 To generate a new key, we need to have the yubikey pluged in,
