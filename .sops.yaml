@@ -8,6 +8,7 @@ keys:
     - &zangetsu age1st5c42z0nrx4gvh3r52e73e9vyx8ultu0zwrf38ltnsvj24l03nsglfh74
     - &yhwach age1t9f9ud76j9jhtj68g6cse0qtcw79sf3xf0p8u03s897ytk33hpgqga2lp9
     - &kuchiki age1zgg9evn6xq8hug3angmdewdhm3gqlrrwl7uss3326zfypalmmdwq2pcuht
+    - &shinji age1z5skf37r5sk337mj0enfggk7x06u0mp3c403x75mn2746l8kxqus2uy7kv
     - &yoruichi age1v735safn23adh2rwqk2stz67erj0l4n423rz66aldhntv4pxd48sxwt67a
     - &kenpachi age163yahwzp9086xhrrga0euq88pfhv5x47zpjtk6zd64jl2c2mhgfsfuweg2
     - &madara age1uwhwtaxyk9926w3wsgjpgxxzd786vmggxq5wmt4m4nzhaj2macfqkn3gje
@@ -23,6 +24,7 @@ creation_rules:
           - *zangetsu
           - *yhwach
           - *kuchiki
+          - *shinji
           - *yoruichi
           - *kenpachi
           - *madara
