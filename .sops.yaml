@@ -7,6 +7,7 @@ keys:
     - &isshin age103v0t5udfzraudqvjtnk6ted9qg6t38qjx2knyq99c5hg70894csd0hw84
     - &zangetsu age1st5c42z0nrx4gvh3r52e73e9vyx8ultu0zwrf38ltnsvj24l03nsglfh74
     - &yhwach age1t9f9ud76j9jhtj68g6cse0qtcw79sf3xf0p8u03s897ytk33hpgqga2lp9
+    - &sado age1skw9g0546wm60qsammr42cvhakmpp9cyf86r8f6t2ywlh0u223rqqzzqhk
     - &kuchiki age1zgg9evn6xq8hug3angmdewdhm3gqlrrwl7uss3326zfypalmmdwq2pcuht
     - &lil-nas-x age1j8lcp9mwvxt5hqn0s5nxganc3f2ry5zp8t6yr0mewf2mlpzhr42sqz575d
     - &shinji age1z5skf37r5sk337mj0enfggk7x06u0mp3c403x75mn2746l8kxqus2uy7kv
@@ -25,6 +26,7 @@ creation_rules:
           - *isshin
           - *zangetsu
           - *yhwach
+          - *sado
           - *kuchiki
           - *lil-nas-x
           - *shinji
